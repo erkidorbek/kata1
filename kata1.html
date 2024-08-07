@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata I</title>
+    <style>
+      body {
+        margin: 2em;
+        padding: 0;
+        background-color: #a02334;
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 860px;
+        background-color: #ffad60;
+        margin: 0 auto;
+        border: 5px solid #6d1b26;
+      }
+      .row {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .row.not-responsive {
+        flex-direction: row;
+      }
+      .align-items-center {
+        align-items: center;
+      }
+      .card {
+        padding: 20px;
+        border: 5px solid #6d1b26;
+      }
+      img {
+        margin-right: 1.5em;
+      }
+
+      h2,
+      h3 {
+        margin: 0;
+      }
+      .role {
+        color: white;
+      }
+      .columns-1 > .card {
+        flex: 1 0 90%;
+      }
+      .columns-2 > .card {
+        flex: 1 0 40%;
+      }
+
+      @media screen and (min-width: 560px) {
+        .row {
+          flex-direction: row;
+        }
+        .columns-1 > .card .content {
+          padding-left: calc(75px + 1.5em);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row columns-2">
+        <div class="card">
+          <div class="row not-responsive align-items-center">
+            <img src="https://placehold.co/75x75" alt="Image of Some Dude" />
+            <div>
+              <h2>Some Dude</h2>
+              <h3 class="role">Sales & Marketing</h3>
+            </div>
+          </div>
+          <div class="content">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit habitant
+              primis curae tellus commodo felis, class ligula a interdum ad
+              ultricies massa montes cras purus nam.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row not-responsive align-items-center">
+            <img src="https://placehold.co/75x75" alt="Image of Some Dude" />
+            <div>
+              <h2>Some Dude</h2>
+              <h3 class="role">Sales & Marketing</h3>
+            </div>
+          </div>
+          <div class="content">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit habitant
+              primis curae tellus commodo felis, class ligula a interdum ad
+              ultricies massa montes cras purus nam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row columns-1">
+        <div class="card">
+          <div class="row not-responsive align-items-center">
+            <img src="https://placehold.co/75x75" alt="Image of Some Dude" />
+            <div>
+              <h2>Some Dude</h2>
+              <h3 class="role">Sales & Marketing</h3>
+            </div>
+          </div>
+          <div class="content">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit habitant
+              primis curae tellus commodo felis, class ligula a interdum ad
+              ultricies massa montes cras purus nam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
